@@ -1,0 +1,30 @@
+<div class="contactPopUp-join-container">
+    <div class="contactPopUp-join-container-inner">
+        <img src="/Join/assets/img/mainLogo-desktop.png" alt="img">
+        <h1>Edit contact</h1>
+        <hr>
+    </div>
+</div>
+<div class="contactPopUp-form-container">
+    <div class="contactPopUp-form-headline" onclick="hideEditContact()"><img src="././assets/img/cross.png" alt=""></div>
+    <div class="contactPopUp-form-body">
+        <div class="contactPopUp-form-body-img">
+            <div class="contactPopUp-form-body-img-picture">
+                <span class="contacts-overview-contact-picture">
+                    VM
+                </span>
+            </div>
+        </div>
+        <div class="contactPopUp-form-body-formular">
+            <form onsubmit="editContact(); return false;">
+                <input required min="2" maxlength="25" type="text" placeholder="Preame" id="edit-prename-input">
+                <input required min="2" maxlength="25" type="text" placeholder="Name" id="edit-name-input">
+                <input required min="2" maxlength="25" type="email" placeholder="Email" id="edit-email-input">
+                <input pattern="[0-9]*" title="Only numbers, please." required min="11" maxlength="14" type="phone" placeholder="Phone" id="edit-phone-input">
+                <div>
+                    <input type="submit" value="Save" id="submitButtonEditContact" class="submitButton">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

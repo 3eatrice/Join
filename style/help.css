@@ -1,0 +1,12 @@
+   body {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0px;
+    display: flex;
+    font-family: 'Inter Bold', sans-serif;
+  }
+  
+  .help-content--inner {
+    margin: 30px;
+    font-family: 'Inter Bold', sans-serif;
+  }
