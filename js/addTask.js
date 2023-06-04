@@ -1,4 +1,4 @@
-setURL('https://beatrice-ambos.developerakademie.net/smallest_backend_ever');
+setURL('https://beatrice-ambos.de/smallest_backend_ever');
 
 let tasks = [];
 let allTasks = [];
@@ -573,9 +573,10 @@ function routeToPage(destination) {
  */
 function getTodayDate() {
   const today = new Date();
-  const month = (today.getMonth() + 1).toString().padStart(2, '0');
-  const day = today.getDate().toString().padStart(2, '0');
-  return `${today.getFullYear()}-${month}-${day}`;
+  const day = String(today.getDate()).padStart(2, '0');
+  const month = String(today.getMonth() + 1).padStart(2, '0');
+  const year = today.getFullYear();
+  return `${day}-${month}-${year}`;
 }
 
 /**

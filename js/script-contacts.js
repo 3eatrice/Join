@@ -1,4 +1,4 @@
-setURL('https://beatrice-ambos.developerakademie.net/smallest_backend_ever');
+setURL('https://beatrice-ambos.de/smallest_backend_ever');
 
 let contacts = [];
 let startingLetters = [];
