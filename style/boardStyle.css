@@ -156,16 +156,17 @@ body {
     transition: 525ms;
     padding: 10px;
     border-radius: 10px;
+    max-height: 300px;
 }
 
 .todoContainer,
 .progressContainer,
 .feedbackContainer,
 .doneContainer {
+    position: relative;
     width: 20%;
     margin-left: 3%;
     height: 100%;
-    /*overflow-y: hidden;*/
     overflow-x: hidden;
 }
 
@@ -329,22 +330,14 @@ body {
     margin-left: 20px;
 }
 
+.todoHeadlineContainer,
+.progressHeadlineContainer,
+.feedbackHeadlineContainer,
 .doneHeadlineContainer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.feedbackHeadlineContainer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.progressHeadlineContainer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.todoHeadlineContainer {
+    position: sticky;
+    top: 0;
+    background-color: #F5F5F5;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
 }
